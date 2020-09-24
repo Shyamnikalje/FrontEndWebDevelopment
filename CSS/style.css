@@ -1,0 +1,20 @@
+body {
+  background-image: url("../img/bg1.jpg");
+  padding: 50px;
+  margin: auto;
+}
+p {
+  font-size: 0.5cm;
+  color: blueviolet;
+}
+
+#p3,
+#p7 {
+  color: crimson;
+}
+
+.para {
+  border: 1px solid blueviolet;
+  padding: 5px;
+  margin: 5px;
+}
