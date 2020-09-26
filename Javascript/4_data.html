@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var name = "sai";
+      document.write("Welcome " + name);
+
+      var names = ["Ali", "Alex", "Sai", "Kabir"];
+
+      document.write("<br> Values in Names : " + names);
+      console.log("names", names);
+      console.table(names);
+
+      var sdata = {
+        name1: "Shreya",
+        no: 01,
+        ispass: true,
+      };
+      console.log("sdata", sdata);
+
+      document.write(
+        "<br> Data from Object sdata : " +
+          sdata.name1 +
+          " Having Roll no : " +
+          sdata.no
+      );
+
+      document.write("<br> Result :" + (sdata.ispass ? "Pass" : "Fail"));
+    </script>
+  </body>
+</html>
