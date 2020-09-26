@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  background-attachment: fixed;
+}
+
+.maindiv {
+  border: solid 1px greenyellow;
+  width: 100%;
+  height: auto;
+  margin: 2px;
+  padding: 2px;
+}
+
+.div {
+  height: 300px;
+  width: 100%;
+  border: 1px solid red;
+  scroll-behavior: smooth;
+}
+
+#div1 {
+  background-image: url("../img/bg13.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#div3 {
+  background-image: url("../img/bg17.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#div4 {
+  justify-content: center;
+  margin: auto;
+  padding: 5px;
+  width: 99%;
+  height: 300px;
+}
