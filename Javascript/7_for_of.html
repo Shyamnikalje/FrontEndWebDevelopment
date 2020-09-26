@@ -18,14 +18,17 @@
       var Snames = ["Alex", "Ali", "Sai", "Ram", "Samir"];
 
       for (var b in Edata) {
-        document.write("<br>" + Edata[b]);
+        document.write("<br>" + b + " : " + Edata[b]);
         console.log("Edata[b]", Edata[b]);
+        console.log("value of b :", b);
       }
 
+      console.table(Edata);
       for (var x of Snames) {
         document.write("<br>" + x);
-        // document.write("<br>" + Snames[x].length);
+        console.log("<br> Snames[x]" + Snames[x]);
       }
+      console.table(Snames);
     </script>
   </body>
 </html>
