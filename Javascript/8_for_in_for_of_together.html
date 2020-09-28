@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var Sinfo = {
+        sname: "sai",
+        age: 25,
+        city: "Pune",
+        marks: "76%",
+        subject: ["Phy", "Chem", "Bio"],
+      };
+
+      //   for (var k of Sinfo) {
+      //     document.write("<br>" + Sinfo[k]);
+      //     console.log("value in k : ", k);
+      //   }
+
+      for (var j in Sinfo) {
+        document.write("<br>" + Sinfo[j]);
+        console.log("value in j : ", j);
+      }
+      document.write("<hr>");
+      for (var i in Sinfo) {
+        console.log("Array.isArray(Sinfo[i])", Array.isArray(Sinfo[i]));
+        if (Array.isArray(Sinfo[i])) {
+          for (var x of Sinfo[i]) {
+            document.write("<br>" + x);
+          }
+        } else {
+          document.write("<br>" + Sinfo[i]);
+        }
+      }
+    </script>
+  </body>
+</html>

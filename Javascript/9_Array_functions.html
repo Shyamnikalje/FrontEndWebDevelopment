@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var Sdata = {
+        sname: "kabir",
+        age: 21,
+        marks: "85%",
+        sub: ["Phy", "Chem", "Bio", "Maths"],
+        Address: {
+          Society: "Swastik Hou.Soc. C11",
+          House_no: 602,
+          village: "Chikhali",
+          city: "Pune",
+          state: "Maharashtra",
+        },
+      };
+
+      for (var a in Sdata) {
+        // document.write("<br>" + Sdata[a]);
+
+        console.log("Sdata[a]", a);
+        var temp = typeof Sdata[a]; //typeof is used to check type of data
+
+        console.log("temp", temp);
+        if (Array.isArray(Sdata[a])) {
+          for (var b of Sdata[a]) {
+            document.write("<br>" + b);
+          }
+        } else if (temp == "object") {
+          for (var k in Sdata[a]) {
+            document.write("<br>" + Sdata[a][k]);
+          }
+        } else {
+          document.write("<br>" + Sdata[a]);
+        }
+      }
+    </script>
+  </body>
+</html>
