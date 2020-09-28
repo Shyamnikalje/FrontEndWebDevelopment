@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      id="Textbox"
+      type="text"
+      placeholder="Write here.."
+      onkeyup="showtext()"
+    />
+    <br />
+    <label for="" id="label1" width="300px"></label>
+    <br />
+    <h1 id="h1">Lorem ipsum dolor sit amet.</h1>
+
+    <script>
+      var msg = (document.getElementById("h1").innerHTML = "Welcome");
+      console.log("msg ", msg);
+      document.getElementById("h1").align = "center";
+
+      function showtext() {
+        var newtext = document.getElementById("Textbox").value;
+        document.getElementById("label1").innerHTML = newtext;
+        console.log("showtext -> text", newtext);
+      }
+    </script>
+  </body>
+</html>
