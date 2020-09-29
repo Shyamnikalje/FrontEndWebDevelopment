@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: linear-gradient(to bottom right, #c51e1e, #2563aa);
+        height: 100vh;
+      }
+      #clr1 {
+        position: absolute;
+        top: 350px;
+        left: 43%;
+      }
+      #clr2 {
+        position: absolute;
+        top: 350px;
+        left: 53%;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <input type="color" id="clr1" onchange="ChangeColor()" />
+    <input type="color" id="clr2" onchange="ChangeColor()" />
+
+    <script>
+      function ChangeColor() {
+        var color1 = document.getElementById("clr1").value;
+        var color2 = document.getElementById("clr2").value;
+
+        // document.getElementById("body").style.backgroundImage =
+        //   "linear-gradient(to bottom right," + color1 + "," + color2 + ")";
+
+        document.body.style.backgroundImage =
+          "linear-gradient(to bottom right," + color1 + "," + color2 + ")";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("<hr> Arrow function ");
+      var wlcm = () => document.write("<br> Welcome.."); //arrow function
+      wlcm();
+
+      document.write("<hr>function with Parameters ");
+
+      function result(sub1, sub2, sub3, sub4, sub5) {
+        //function with parameters
+        document.write("<br> Subject 1:" + sub1);
+        document.write("<br> Subject 2:" + sub2);
+        document.write("<br> Subject 3:" + sub3);
+        document.write("<br> Subject 4:" + sub4);
+        document.write("<br> Subject 5:" + sub5);
+
+        let total = sub1 + sub2 + sub3 + sub4 + sub5;
+        let percent = (total / 500) * 100;
+
+        document.write("<br> Total : " + total);
+        document.write("<br> Percentage : " + percent + "%");
+      }
+
+      result(50, 56, 58, 76, 62); //function call with passed values
+      result(85, 75, 90, 80, 70); //function call with passed values
+
+      document.write("<hr> IIFE function ");
+
+      //   IIFE function
+
+      (function () {
+        document.write("<br> Welcome In IIFE function...");
+      })();
+
+      document.write("<hr> Inner function ");
+
+      //   Inner function
+
+      function temp() {
+        return function () {
+          document.write("<br> we are in Inner function ");
+        };
+      }
+      temp()();
+    </script>
+  </body>
+</html>

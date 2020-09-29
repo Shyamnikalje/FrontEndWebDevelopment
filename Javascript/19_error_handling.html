@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label id="lbl1">Enter a Number between 10 to 100</label><br />
+    <input type="text" name="" id="Inputbox" /><br />
+    <button id="btn1" onclick="myFunction()">Test Input</button><br />
+    <label id="p1"></label>
+
+    <script>
+      function myFunction() {
+        var msg, x;
+        msg = document.getElementById("p1");
+        msg.innerHTML = "";
+        x = document.getElementById("Inputbox").value;
+
+        try {
+          if (x == "") throw "Empty";
+
+          if (isNaN(x)) throw "Not a Valid Number";
+
+          x = Number(x);
+
+          if (x < 10) throw "Too low";
+          if (x > 100) throw "Too high";
+        } catch (err) {
+          msg.innerHTML = "Input Is " + err;
+        }
+      }
+    </script>
+  </body>
+</html>
